@@ -134,19 +134,19 @@ function indexPage(origin, key) {
     ],
   });
   groups.push({
-    title: "分国家 · 全部节点",
-    items: COUNTRIES.flatMap((c) => [
-      [c + " · V2RayN", `/by-country/${c}.txt`],
-      [c + " · Clash", `/by-country/clash-${c}.yaml`],
-      [c + " · sing-box", `/by-country/singbox-${c}.json`],
-    ]),
-  });
-  groups.push({
     title: "分国家 · 仅住宅 IP",
     items: RESI_COUNTRIES.flatMap((c) => [
       [c + " · V2RayN", `/residential-by-country/${c}.txt`],
       [c + " · Clash", `/residential-by-country/clash-${c}.yaml`],
       [c + " · sing-box", `/residential-by-country/singbox-${c}.json`],
+    ]),
+  });
+  groups.push({
+    title: "分国家 · 全部节点",
+    items: COUNTRIES.flatMap((c) => [
+      [c + " · V2RayN", `/by-country/${c}.txt`],
+      [c + " · Clash", `/by-country/clash-${c}.yaml`],
+      [c + " · sing-box", `/by-country/singbox-${c}.json`],
     ]),
   });
 
