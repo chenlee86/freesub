@@ -13,7 +13,7 @@ proxies:
   sni: hopp-legend-se.roxa.org
   skip-cert-verify: true
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: hk3n.wxgqlfx.vip
+  server: 156.226.168.221
   port: 35193
   udp: true
   type: vless
