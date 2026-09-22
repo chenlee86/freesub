@@ -4,24 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-      "server": "bgr.accessgate.link",
-      "server_port": 2443,
-      "uuid": "38eb3e71-4349-4bd6-9baf-9740e1896495",
-      "flow": "xtls-rprx-vision",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
-        "server_name": "unpkg.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw",
-          "short_id": "b0d8c9a285c70f6f"
-        }
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
@@ -41,7 +36,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "ceaf462e-a9fa-4c4b-94be-f192570465a7",
+      "uuid": "b5f27d9a-4d7a-4fa3-a45a-09bfd3e8a248",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -58,19 +53,17 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
