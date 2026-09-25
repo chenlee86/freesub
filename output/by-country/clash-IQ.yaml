@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.18.34.21
-  port: 8443
+  server: 193.56.135.137
+  port: 9543
   udp: true
   type: vless
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
   tls: true
-  servername: socks5.revil-time3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcde
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select

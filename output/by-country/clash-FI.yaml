@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: assets-fi.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService

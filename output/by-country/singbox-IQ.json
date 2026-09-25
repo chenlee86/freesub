@@ -6,23 +6,21 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "104.18.34.21",
-      "server_port": 8443,
-      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "server": "193.56.135.137",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "socks5.revil-time3.workers.dev",
-        "insecure": false,
+        "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/socks5://128.140.46.169:13482",
-        "headers": {
-          "Host": "socks5.revil-time3.workers.dev"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcde"
         }
       }
     },
