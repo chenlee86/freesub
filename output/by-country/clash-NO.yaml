@@ -5,15 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 挪威 (Norway) 01 - xiaohe
-  server: norw-1.failspace.top
-  port: 443
+  server: 139.100.236.74
+  port: 1
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: norw-1.failspace.top
-  skip-cert-verify: false
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WxYpOK1iPSJySbVNMMJDtw
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,17 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
-      "server": "norw-1.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "norw-1.failspace.top",
-        "insecure": false
-      }
+      "server": "139.100.236.74",
+      "server_port": 1,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WxYpOK1iPSJySbVNMMJDtw"
     },
     {
       "type": "selector",
