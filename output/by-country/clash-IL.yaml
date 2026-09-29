@@ -29,9 +29,9 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
-  server: de2.dzvn.space
+  server: 193.202.10.137
   port: 2291
   udp: true
   type: vless
