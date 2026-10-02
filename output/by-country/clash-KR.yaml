@@ -13,6 +13,22 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   server: 132.145.80.230
   port: 80
   udp: true
@@ -23,36 +39,14 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 141.164.45.187
-  port: 2376
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 132.226.226.189
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  server: 131.186.19.174
   port: 50160
   udp: true
   type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
+  password: 7302ad33229de166d393cd56143a1e4c
+  sni: google.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: kr2-r.link-t7.com
-  port: 10047
-  udp: true
-  type: vless
-  uuid: 58C828CD-3EBA-46F9-B297-16003D7A6E68
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
   server: 3.39.4.109
   port: 18967
@@ -65,7 +59,7 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   server: 3.39.4.109
   port: 13672
@@ -100,35 +94,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
-  server: 141.164.45.187
-  port: 7001
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  server: vpn-kr-002.fastervpn.world
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
-  server: 141.164.45.187
-  port: 6697
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -145,8 +125,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
   - 🇰🇷 韩国 (South Korea) 10 - xiaohe
   - 🇰🇷 韩国 (South Korea) 11 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 12 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -163,7 +141,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
   - 🇰🇷 韩国 (South Korea) 10 - xiaohe
   - 🇰🇷 韩国 (South Korea) 11 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 12 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 13 - xiaohe
 rules:
 - MATCH,PROXIES
