@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇩 印尼 (Indonesia) 03 - xiaohe
   server: funagfr.alixxplay.com
   port: 61847
