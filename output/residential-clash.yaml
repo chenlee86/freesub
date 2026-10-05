@@ -4,8 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: 172.66.152.4
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: 212.74.39.235
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  server: 95.181.162.170
+  port: 444
+  udp: true
+  type: vless
+  uuid: 7094cade-110a-4be0-b657-15d606dcea6d
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: argo6.5671234.xyz
   port: 443
   udp: true
   type: vless
@@ -13,40 +34,25 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
-  sni: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
