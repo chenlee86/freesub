@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 45.207.207.25
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 45.95.96.182
   port: 443
   udp: true
@@ -17,13 +24,6 @@ proxies:
     short-id: a7268acdcfef5862
   servername: ai.yump.online
   client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 45.207.207.25
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
 proxy-groups:
 - name: PROXIES
   type: select
